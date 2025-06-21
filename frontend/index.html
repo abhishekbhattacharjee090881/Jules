@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Data Architecture Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Azure Data Architecture Generator</h1>
+
+        <form id="architectureForm">
+            <div>
+                <label for="project_name">Project Name:</label>
+                <input type="text" id="project_name" name="project_name" value="MyDemoProject" required>
+            </div>
+            <div>
+                <label for="use_case_description">Use Case Description:</label>
+                <textarea id="use_case_description" name="use_case_description" rows="3" required>Sales Analytics Data Warehouse</textarea>
+            </div>
+            <div>
+                <label for="data_sources">Data Sources (comma-separated):</label>
+                <input type="text" id="data_sources" name="data_sources" placeholder="e.g., CRM API, ERP Database" value="CRM API, ERP Database, Log files">
+            </div>
+            <div>
+                <label for="primary_processing_type">Primary Processing Type:</label>
+                <select id="primary_processing_type" name="primary_processing_type">
+                    <option value="Batch" selected>Batch</option>
+                    <option value="Streaming">Streaming</option>
+                </select>
+            </div>
+            <div>
+                <label>Analytical Tools Needed:</label>
+                <input type="checkbox" id="tool_dashboards" name="analytical_tools" value="Dashboards" checked>
+                <label for="tool_dashboards">Dashboards</label>
+                <input type="checkbox" id="tool_adhoc" name="analytical_tools" value="Ad-hoc SQL" checked>
+                <label for="tool_adhoc">Ad-hoc SQL</label>
+                <input type="checkbox" id="tool_ml" name="analytical_tools" value="Machine Learning">
+                <label for="tool_ml">Machine Learning</label>
+            </div>
+            <button type="submit">Generate Architecture</button>
+        </form>
+
+        <hr>
+
+        <h2>Generated Architecture</h2>
+        <div id="resultsArea">
+            <p>Submit the form to see results here.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });</script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+# For SQLite, no separate driver is typically needed with SQLAlchemy,
+# as it uses the built-in sqlite3 module.
+# If we later switch to PostgreSQL or MySQL, we'd add psycopg2-binary or mysqlclient.

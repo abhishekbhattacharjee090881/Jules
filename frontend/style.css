@@ -1,0 +1,113 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+h1, h2 {
+    color: #005A9E; /* Official Azure Blue */
+    border-bottom: 2px solid #0078D4;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #0078D4;
+    box-shadow: 0 0 5px rgba(0,120,212,0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+input[type="checkbox"] { margin-right: 5px; }
+input[type="checkbox"] + label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #0078D4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #005A9E;
+}
+
+hr {
+    margin: 35px 0;
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+#resultsArea {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Styles for generated markdown content */
+#resultsArea h1, #resultsArea h2, #resultsArea h3, #resultsArea h4 { color: #0078D4; border-bottom: none; margin-top: 1.2em; margin-bottom: 0.6em;}
+#resultsArea h1 {font-size: 1.6em;}
+#resultsArea h2 {font-size: 1.4em;}
+#resultsArea h3 {font-size: 1.2em;}
+#resultsArea p { margin-bottom: 1em; }
+#resultsArea ul, #resultsArea ol { margin-bottom: 1em; padding-left: 20px;}
+#resultsArea li { margin-bottom: 0.5em; }
+#resultsArea code { background-color: #eef; padding: 3px 5px; border-radius: 4px; font-family: "Consolas", "Monaco", monospace; font-size: 0.95em; }
+#resultsArea pre { background-color: #eef; padding: 15px; border-radius: 5px; overflow-x: auto; }
+#resultsArea pre code { background-color: transparent; padding: 0; border-radius: 0; }
+#resultsArea table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+#resultsArea th, #resultsArea td { border: 1px solid #d8d8d8; padding: 10px 12px; text-align: left; }
+#resultsArea th { background-color: #f0f4f7; font-weight: 600; }
+#resultsArea blockquote { border-left: 4px solid #0078D4; padding-left: 15px; margin-left: 0; color: #555; font-style: italic;}
+.mermaid { text-align: center; margin-bottom: 1em; }
